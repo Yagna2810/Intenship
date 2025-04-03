@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <div id="nav">
+      <a href="index.html" id="logo"><img src="logo 1.png" alt="logo" id="logo1"></a>
+      <div id="main1">
+        <a href="index.html" style="color: red;">Home</a>
+        <a href="about.html">About us</a>
+        <div class="dropdown">
+          <button class="dropbtn">Buy Spices</button>
+          <div class="dropdown-content">
+            <a href="spices1.php">buy 100 gm spices</a>
+            <a href="spices.php">buy 500 gm spices</a>
+            <a href="offer.html">Combo Offers</a>
+          </div>
+        </div>
+        <a href="contact.php">Contact Us</a>
+      </div>
+      <div id="icon">
+        <div class="search-container">
+          <button class="search-icon" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <form id="search-form" class="hidden">
+            <input type="text" name="search-query" id="search-query" placeholder="Search..." oninput="performSearch()">
+            <div id="search-results" class="hidden"></div>
+          </form>
+        </div>
+        <a href="login1.php"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      <div class="n1">
+        <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="offer.html">Combo Offers</a>
+          <a href="contact.php">Contact Us</a>
+          <a
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13571.356648808773!2d73.10256807469602!3d22.69238056973417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e384329fe43cd%3A0x4c8999ca5276044e!2sAPMC!5e0!3m2!1sen!2sin!4v1712580706763!5m2!1sen!2sin">Our
+            Location</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <main>
+    <!-- SLIDER -->
+    <div class="slider-container">
+      <div class="slider">
+        <img src="1..jpg" alt="Image 1">
+        <img src="2.jpg" alt="Image 2">
+        <img src="3.jpg" alt="Image 3">
+        <img src="4.jpg" alt="Image 4">
+        <img src="5.jpg" alt="Image 5">
+      </div>
+    </div>
+    <script src="index.js"> </script>
+
+    <!--CONTENT-->
+    <div id="main">
+      <h1 id="welcome">Welcome to Shree Vasudev trading co.</h1>
+      <div class="content">
+        <p id="p1">your one-stop destination for premium quality spices and masalas. Dive into a world of flavors and
+          aromas that will tantalize your taste buds and elevate your culinary creations to new heights.At Shree Vasudev
+          Trading co., we understand the importance of authentic ingredients in cooking. That's why we source the finest
+          spices from across the globe, ensuring that each product meets our stringent quality standards. From the rich
+          hues of Kashmiri saffron to the fiery heat of Indian red chili powder, our diverse range of spices caters to
+          every palate and every recipe.What sets us apart is our commitment to freshness and purity. We believe that
+          great flavor starts with fresh ingredients, which is why we grind our spices in small batches to preserve
+          their natural oils and aroma. Whether you're looking for whole spices to toast and grind at home or convenient
+          pre-ground blends for quick and easy cooking, you'll find it all at Shree Vasudev Trading Co.
+        </p>
+      </div>
+    </div>
+    <!-- QULITY -->
+    <h1 id="qulity">Why Choose Our Product?</h1>
+
+    <!-- ABOUT in RED -->
+    <div id="q">
+      <div id="q1">
+        <h4>Quality Assurance</h4>
+        <p id="p3">To continue the legacy of incredible taste of India, we offer a galore of authentic Indian spices –
+          Basic, Blended, Specialty, Whole and Powder!</p>
+      </div>
+      <div id="q2">
+        <h4>Authenticity Guaranteed</h4>
+        <p id="p3">We take pride in offering authentic masalas that capture the true essence of regional cuisines. Our
+          blends are crafted using time-honored recipes and premium ingredients, so you can trust that you're getting
+          the real deal.</p>
+      </div>
+      <div id="q3">
+        <h4>Convenience and Accessibility</h4>
+        <p id="p3">With Our Website, ordering your favorite masalas is quick and easy. Simply browse our online store,
+          select your desired spices, and have them delivered straight to your doorstep. No more hunting for specialty
+          ingredients we've got you covered!</p>
+      </div>
+    </div>
+
+    <!-- PUREST SPICES -->
+    <div id="pure">
+      <h1 id="m1">The purest indian spices</h1>
+      <p id="p2">Indian spices are savoured and sought around the world from ancient times because of their culinary and
+        medicinal significance. At Vasant Masala, we aim to offer authentic Indian spices and recreate the gourmet magic
+        in every kitchen with their irresistible flavours and distinctive aromas. Made with the finest and purest
+        ingredients, our spices and condiments lend traditional taste to your meals. Our customers love us because of
+        the quality we provide them! We only buy raw spices which are preserved naturally so that they are rich in
+        nutritional value. Everything - sorting, cleaning, grinding and packaging is done through ultra-modern
+        machinery. For finely and evenly grinding the spices, we use Cool Grinding Technology which keeps the taste and
+        flavour intact for a longer period of time.</p>
+    </div>
+    <div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div id="footer">
+      <div class="f1">IMPORTANT LINK</div>
+      <span>
+        <a href="contact.php" id="ficon">contact us</a> |
+        <a href="cpolicy.html" id="ficon">cancelation and return policy</a> |
+        <a href="tpolicy.html" id="ficon">terms and condition</a> |
+        <a href="spolicy.html" id="ficon">shiping policy</a>
+      </span>
+      <div class="f1">ADDRESS</div>
+      <div>Ramdev Masala co., Market Yard, Anand-388001</div>
+      <div class="f1">
+        <a href="https://www.instagram.com/shree_vasudev_traders_17?igsh=OW1rbzd1MDN2YjM4&utm_source=qr" id="ficon"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/shree.vasudev.traders?mibextid=AEUHqQ" id="ficon"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="http://www.twitter.com" id="ficon"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div id="rights">
+      @2024 Ramdev Masala co. all rights reserved
+    </div>
+  </footer>
+</body>
+
+</html>

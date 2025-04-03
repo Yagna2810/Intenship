@@ -1,0 +1,58 @@
+#main{
+    display: flex;
+}
+#cu{
+    margin: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+}
+#cu1{
+    margin: 0px 200px 10px 200px;
+    
+}
+#cu1 h5{
+   margin-bottom : 10px;
+}
+hr{
+    margin-bottom: 20px;
+}
+input{
+    font-size: 20px;
+    margin-bottom: 10px;
+    height: 35px;
+    width: 250px;
+    border: 0.5px solid rgba(0,0,0,0.1);
+    font-weight: 100;
+}
+textarea{
+    margin-bottom: 10px;    
+    font-size: 20px;
+    height: 200px;
+    width: 500px;
+    border: 0.5px solid rgba(0,0,0,0.1); 
+    font-weight: 100;
+}
+#select{
+    margin-bottom: 10px;    
+    font-size: 20px;
+    height: 35px;
+    width: 250px;
+    border: 0.5px solid rgba(0,0,0,0.1);
+    font-weight: 100;
+}
+#vl{
+    border-left: 0.5px solid rgba(0,0,0,0.7);
+    height: 500px;
+    margin: 10px;
+    margin-top: 0px;
+}
+#sum{
+    font-weight: 400;
+    border: 1px solid black;
+
+}
+#sum:hover{
+    color: red;
+    cursor: pointer;
+}

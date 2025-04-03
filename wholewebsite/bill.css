@@ -1,0 +1,192 @@
+#main{
+    display: flex;
+    margin: 10px 150px 10px 150px;
+    
+}
+#bill{
+    width: 70%;
+    margin-top: 50px;
+}
+#info{
+    width: 25%;
+    margin-left: 40px;
+    
+}
+#info h1{
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+}
+#info h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-left:5px;
+}
+#ba,#ba1,#bp,#ba p,#ba1 p,#ba2 p{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    text-transform:uppercase;
+} 
+hr{
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+
+/* CSS for styling the progress bar */
+.progress-bar {
+    background-color: transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.progress-line {
+    background-color: rgba(255,0,0,0.7);
+    border-radius: 16px;
+    height: 10px;
+    position: absolute;
+    overflow:visible;
+    padding-top: 12px;
+}
+
+.progress-indicators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.step-indicator {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255,0,0,1);
+    border-radius: 50%;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: aliceblue;
+    
+}
+
+.step-name {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#pl{
+    border: 2px solid #666;
+    margin-bottom: 20px;
+}
+#billing h4,#review h4,#payment h4,#complete h4{
+    color: white;
+    font-weight: bolder;
+    background-color: rgba(255,0,0,0.9);
+    padding: 10px 0px ;
+}
+#billing h4 span,#review h4 span,#payment h4 span,#complete h4 span{
+    padding: 5px 10px;
+    margin: 7px;
+    color: black;
+    background-color: white;
+    font-weight: 400;
+}
+
+#name th{
+    font-size: 14px;
+    font-weight: 370;
+}
+.bt{
+    height: 80px;
+    width: 635px;
+    text-align: left;
+}
+.bd input{
+    height: 35px;
+    width: 190px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#ce input,#ce select{
+    height: 35px;
+    width: 270px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#address input{
+    height: 35px;
+    width: 600px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#sdl,#shl{
+    font-size: 14px;
+    font-weight: 370;
+}
+#sd,#sh{
+    margin-top: 30px;
+}
+#sub{
+    text-align: right;
+    margin-right: 20px;
+    
+}#submit{
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: rgba(255,0,0,0.7);
+}
+form{
+border: 1px solid rgba(0,0,0,0.2);
+padding-left: 40px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+#cart-table{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+#review table th{
+font-weight: 400;
+padding-bottom: 5px;
+border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+#review table td{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    font-weight: 500;
+    font-size: 14px;
+}
+    #grand-total{
+        font-size: 22px;
+        font-weight: 500;
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
+        padding: 50px;
+        border: 1px solid rgba(0,0,0,0.6);
+    }
+    input{
+        text-transform: uppercase;
+    }
+    #required3{
+        text-transform: lowercase;
+    }

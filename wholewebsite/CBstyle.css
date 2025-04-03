@@ -1,0 +1,128 @@
+css  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#chat-btn {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#chat-box {
+    display: none;
+    width: 320px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+}
+
+#chat-header {
+    background: #075e54;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+#close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#chat-content {
+    height: 350px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: #f7f7f7;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+#send-btn {
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+/* WhatsApp-style chat bubbles */
+/* Adjust user message for a more authentic WhatsApp look */
+.user-message {
+    align-self: flex-end;
+    background: #dcf8c6;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 75%;
+    margin: 5px 10px;
+    font-size: 14px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust bot message */
+.bot-message {
+    align-self: flex-start;
+    background: #ffffff;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 75%;
+    margin: 5px 10px;
+    font-size: 14px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Animate chat messages */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-message, .bot-message {
+    animation: fadeIn 0.2s ease-in-out;
+}

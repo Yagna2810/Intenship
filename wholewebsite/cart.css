@@ -1,0 +1,92 @@
+#h{
+    margin: 50px 150px 50px 150px;
+    font-size: 18px;
+    
+}
+#h h1{
+    font-weight: 400;
+}
+#main{
+    margin: 0px 150px 50px 150px;
+}
+#cart-table{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+#main table th{
+font-weight: 400;
+padding-bottom: 5px;
+border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+#ProductName{
+    width: 700px;
+}
+#Img1 img{
+    height: 80px;
+    width: 80px;
+}
+#main table td{
+padding-bottom: 5px;
+border-bottom: 1px solid rgba(0,0,0,0.4);
+font-weight: 500;
+font-size: 14px;
+}
+#qi{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-left: 5px;
+    padding-left: 5px;
+}
+#empty-cart-msg{
+    margin: 50px 150px 50px 150px;
+    font-weight: 500;
+    font-size: 30px;
+}
+#b1{
+    margin: 50px 150px 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#cs{
+    margin-top: 40px;
+    background-color: rgba(255,0,0,0.8);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 7px;
+    border: 1px solid rgba(0,0,0,0.4);
+    cursor: pointer;
+    height: 30px;
+    
+}
+#clear{
+    font-size: 18px;
+    padding: 7px;
+    border: 1px solid rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.grand{
+    margin: 10px 150px 10px 150px;
+}
+#grand-total{
+    font-size: 22px;
+    font-weight: 500;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid rgba(0,0,0,0.6);
+}
+#checkout{
+    font-size: 18px;
+    padding: 7px;
+    border: 1px solid rgba(0,0,0,0.4);
+    cursor: pointer;
+    background-color: rgba(255,0,0,0.8);
+    font-weight: 800;
+    color: white;
+    margin-top: 50px;
+}

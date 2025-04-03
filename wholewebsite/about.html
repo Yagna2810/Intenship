@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<style>
+
+  /* Hero Section */
+#main-welcome {
+    background: url('images/welcome.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Georgia', serif;
+    padding: 50px;
+    position: relative;
+}
+
+/* Dark Overlay */
+#main-welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Title Design */
+.welcome-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f4d03f;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Paragraph Styling */
+.welcome-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Grid Layout */
+#title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-section {
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e67e22;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.about-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #title {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #title {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    #main-welcome {
+        height: 300px;
+    }
+
+    .welcome-content h1 {
+        font-size: 28px;
+    }
+
+    .welcome-content p {
+        font-size: 16px;
+    }
+}
+
+</style>
+
+</head>
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <div id="nav">
+      <a href="index.html" id="logo"><img src="logo 1.png" alt="logo" id="logo1"></a>
+      <div id="main1">
+        <a href="index.html">Home</a>
+        <a href="about.html" style="color: red;">About us</a>
+        <div class="dropdown">
+          <button class="dropbtn">Buy Spices</button>
+          <div class="dropdown-content" style="z-index: 5;">
+            <a href="spices1.php">buy 100 gm spices</a>
+            <a href="spices.php">buy 500 gm spices</a>
+            <a href="offer.html">Combo Offers</a>
+          </div>
+        </div>
+        <a href="contact.php">Contact Us</a>
+      </div>
+      <div id="icon">
+        <div class="search-container">
+          <button class="search-icon" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <form id="search-form" class="hidden">
+            <input type="text" name="search-query" id="search-query" placeholder="Search..." oninput="performSearch()">
+            <div id="search-results" class="hidden"></div>
+          </form>
+        </div>
+        <a href="login1.php"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      <div class="n1">
+        <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="offer.html">Combo Offers</a>
+          <a href="contact.php">Contact Us</a>
+          <a
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13571.356648808773!2d73.10256807469602!3d22.69238056973417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e384329fe43cd%3A0x4c8999ca5276044e!2sAPMC!5e0!3m2!1sen!2sin!4v1712580706763!5m2!1sen!2sin">Our
+            Location</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+    <main>
+      <script src="index.js"> </script>
+      <div id="main-welcome">
+        <div class="welcome-content">
+            <h1>Welcome to Ramdev Masala</h1>
+            <p>At Ramdev Masala, we're passionate about sharing the vibrant and diverse world of Indian cuisine.</p>
+        </div>
+    </div>
+    
+    <div id="title">
+        <div class="about-section">
+            <img src="images/mission.jpeg" alt="Mission Image" class="about-image">
+            <div class="about-content">
+                <h4>Our Mission</h4>
+                <p>Our mission is to demystify Indian cooking and empower home chefs of all skill levels.</p>
+            </div>
+        </div>
+    
+        <div class="about-section">
+            <img src="images/shop.jpg" alt="Shop Experience" class="about-image">
+            <div class="about-content">
+                <h4>Our Shop Experience</h4>
+                <p>What sets Ramdev Masala apart is our unwavering commitment to quality.</p>
+            </div>
+        </div>
+    
+        <div class="about-section">
+            <img src="images/team.jpeg" alt="Meet the Team" class="about-image">
+            <div class="about-content">
+                <h4>Meet the Team</h4>
+                <p>Behind Ramdev Masala is a dedicated team of food enthusiasts.</p>
+            </div>
+        </div>
+    
+        <div class="about-section">
+            <img src="images/promise.jpg" alt="Our Promise" class="about-image">
+            <div class="about-content">
+                <h4>Our Promise</h4>
+                <p>When you choose Ramdev Masala, you can trust that you're embarking on a culinary journey.</p>
+            </div>
+        </div>
+    
+        <div class="about-section">
+            <img src="images/community.jpg" alt="Community Image" class="about-image">
+            <div class="about-content">
+                <h4>Join Our Community</h4>
+                <p>We believe that food has the power to connect people across cultures.</p>
+            </div>
+        </div>
+    </div>
+    
+    </main>
+    <!-- footer -->
+    <footer>
+      <div id="footer">
+        <div class="f1">IMPORTANT LINK</div>
+        <span>
+          <a href="contact.php" id="ficon">contact us</a> |
+          <a href="cpolicy.html" id="ficon">cancelation and return policy</a> |
+          <a href="tpolicy.html" id="ficon">terms and condition</a> |
+          <a href="spolicy.html" id="ficon">shiping policy</a>
+        </span>
+        <div class="f1">ADDRESS</div>
+        <div>Ramdev Masala co., Market Yard, Anand-388001</div>
+        <div class="f1">
+          <a href="https://www.instagram.com/shree_vasudev_traders_17?igsh=OW1rbzd1MDN2YjM4&utm_source=qr" id="ficon"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/shree.vasudev.traders?mibextid=AEUHqQ" id="ficon"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="http://www.twitter.com" id="ficon"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div id="rights">
+        @2024 Ramdev Masala co. all rights reserved
+      </div>
+    </footer>
+</body>
+</html>

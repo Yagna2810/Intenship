@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <div id="nav">
+          <a href="index.html" id="logo"><img src="logo 1.png" alt="logo" id="logo1"></a>
+          <div id="main1">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Buy Spices</button>
+              <div class="dropdown-content">
+                <a href="spices1.php">buy 100 gm spices</a>
+                <a href="spices.php">buy 500 gm spices</a>
+                <a href="offer.html">Combo Offers</a>
+              </div>
+            </div>
+            <a href="contact.php">Contact Us</a>
+          </div>
+          <div id="icon">
+            <div class="search-container">
+              <button class="search-icon" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <form id="search-form" class="hidden">
+                <input type="text" name="search-query" id="search-query" placeholder="Search..." oninput="performSearch()">
+                <div id="search-results" class="hidden"></div>
+              </form>
+            </div>
+            <a href="login1.php"><i class="fa-regular fa-user"></i></a>
+            <a href="cart.html" style="color: red;"><i class="fa-solid fa-bag-shopping"></i></a>
+          <div class="n1">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+              <a href="offer.html">Combo Offers</a>
+              <a href="contact.php">Contact Us</a>
+              <a
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13571.356648808773!2d73.10256807469602!3d22.69238056973417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e384329fe43cd%3A0x4c8999ca5276044e!2sAPMC!5e0!3m2!1sen!2sin!4v1712580706763!5m2!1sen!2sin">Our
+                Location</a>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+    
+      </header>
+    <main>
+        <script src="index.js"> </script>
+        <div id="main">
+            <div id="bill">
+                <!-- Progress bar with step names -->
+                <div class="progress-bar">
+                    <div class="progress-line" style="width: 3%;"></div>
+                    <div class="progress-indicators">
+                        <div class="step-indicator active">
+                            <div class="step-name">1.Billing</div>
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                        <div class="step-indicator">
+                            <div class="step-name">2.Payment</div>
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                        <div class="step-indicator">
+                            <div class="step-name">3.Review</div>
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                        <div class="step-indicator">
+                            <div class="step-name">4.Complete</div>
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr id="pl">
+
+                <!-- Checkout steps -->
+                <div id="billing" class="step active">
+                    <h4><span>1</span>Billing Information</h4>
+                    <form action="bill.php" id="form" method="post" >
+                        <table class="bt">
+                            <tr id="name">
+                                <th>first name*</th>
+                                <th>middle name</th>
+                                <th>last name*</th>
+                            </tr>
+                            <tr>
+                                <td class="bd"><input type="text" name="fname" id="required1" required></td>
+                                <td class="bd"><input type="text" name="mname" id="middle"></td>
+                                <td class="bd"><input type="text" name="lname" id="required2" required></td>
+                            </tr>
+                        </table>
+                        <table class="bt">
+                            <tr id="name">
+                                <th>Company</th>
+                                <th>e-mail address*</th>
+                            </tr>
+                            <tr id="ce">
+                                <td class="bd"><input type="text" name="company"id="company"></td>
+                                <td class="bd"><input type="email" name="email" id="required3" required></td>
+                            </tr>
+                        </table>
+                        <table class="bt">
+                            <tr id="name">
+                                <th>address*</th>
+                            </tr>
+                            <tr id="address">
+                                <td><input type="text" name="address" id="required4" required></td>
+                            </tr>
+                        </table>
+                        <table class="bt">
+                            <tr id="name">
+                                <th>state*</th>
+                                <th>city*</th>
+                            </tr>
+                            <tr id="ce">
+                                <td><input type="text" name="state" id="required5" required></td>
+                                <td><input type="text" name="city" id="required6" required></td>
+                            </tr>
+                        </table>
+                        <table class="bt">
+                            <tr id="name">
+                                <th>Zip Code*</th>
+                                <th>country*</th>
+                            </tr>
+                            <tr id="ce">
+                                <td><input type="tel" name="zipcode" id="required7" onkeydown="return allowOnlyDigits(event)" maxlength="6" required></td>
+                                <td><select name="country" id="country">
+                                        <option value="india">india</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="bt">
+                            <tr id="name">
+                                <th>mobile number*</th>
+                                <th>whatsapp number</th>
+                            </tr>
+                            <tr id="ce">
+                                <td><input type="text" name="mobile" id="required8" onkeydown="return allowOnlyDigits(event)" maxlength="10"></td>
+                                <td><input type="text" name="whatsapp" id="whatsapp"onkeydown="return allowOnlyDigits(event)" maxlength="10"></td>
+                            </tr>
+                        </table>
+                        <p>* Required Fields</p>
+                        <div id="sub">
+                            <input type="submit" value="submit"  id="submit" onclick="validateForm()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="info">
+                <h1>Your Checkout Progress</h1>
+                <hr>
+                <h4>Billing Address</h4>
+                <p id="ba"></p>
+                <h4>Shipping Address</h4>
+                <p id="ba1"></p>
+                <h4>Payment Method</h4>
+                <p id="bp"></p>
+            </div>
+        </div>
+        <script src="cart.js"></script>
+    </main>
+    <footer>
+    <div id="footer">
+      <div class="f1">IMPORTANT LINK</div>
+      <span>
+        <a href="contact.php" id="ficon">contact us</a> |
+        <a href="cpolicy.html" id="ficon">cancelation and return policy</a> |
+        <a href="tpolicy.html" id="ficon">terms and condition</a> |
+        <a href="spolicy.html" id="ficon">shiping policy</a>
+      </span>
+      <div class="f1">ADDRESS</div>
+      <div>Ramdev Masala co., Market Yard, Anand-388001</div>
+      <div class="f1">
+        <a href="https://www.instagram.com/shree_vasudev_traders_17?igsh=OW1rbzd1MDN2YjM4&utm_source=qr" id="ficon"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/shree.vasudev.traders?mibextid=AEUHqQ" id="ficon"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="http://www.twitter.com" id="ficon"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div id="rights">
+      @2024 Ramdev Masala co. all rights reserved
+    </div>
+  </footer>
+</body>
+
+</html>

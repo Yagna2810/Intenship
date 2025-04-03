@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMBO-4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="combo4.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <div id="nav">
+      <a href="index.html" id="logo"><img src="logo 1.png" alt="logo" id="logo1"></a>
+      <div id="main1">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <div class="dropdown">
+          <button class="dropbtn" style="color: red;">Buy Spices</button>
+          <div class="dropdown-content">
+            <a href="spices1.php">buy 100 gm spices</a>
+            <a href="spices.php">buy 500 gm spices</a>
+            <a href="offer.html">Combo Offers</a>
+          </div>
+        </div>
+        <a href="contact.php">Contact Us</a>
+      </div>
+      <div id="icon">
+        <div class="search-container">
+          <button class="search-icon" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <form id="search-form" class="hidden">
+            <input type="text" name="search-query" id="search-query" placeholder="Search..." oninput="performSearch()">
+            <div id="search-results" class="hidden"></div>
+          </form>
+        </div>
+        <a href="login1.php"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      <div class="n1">
+        <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="offer.html">Combo Offers</a>
+          <a href="contact.php">Contact Us</a>
+          <a
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13571.356648808773!2d73.10256807469602!3d22.69238056973417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e384329fe43cd%3A0x4c8999ca5276044e!2sAPMC!5e0!3m2!1sen!2sin!4v1712580706763!5m2!1sen!2sin">Our
+            Location</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+    <main>
+        <script src="index.js"> </script>
+        <div id="back">
+            <a href="spices.php">&laquo; back to shop page</a>
+        </div>
+        <!-- image gallary -->
+        <!-- Thumbnail images -->
+        <div class="Img">
+            <div>
+                <img class="subImg" src="banner-4-02_1_.png" alt="banner-4-02_1_.png"><br>
+            </div>
+            <div>
+                <img id="mainImg" src="banner-4-02_1_.png" alt="banner-4-02_1_.png">
+            </div>
+
+            <script src="combo4.js"></script>
+            <div id="main">
+                <h2>COMBO-4</h2><br>
+                <p id="p2">Contains <b>Vasant Kumthi Kashmiri Chilli Powder 1KG, Vasant Turmeric Powder 1KG, Vasant Coriander Powder 1KG</b></p><br>
+                <h1>₹<span id="totalPrice">1770.00</span></h1>
+                <div id="cart">
+                    <table>
+                        <tr>
+                            <th>Qty</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" id="quantity" min="1" value="1" onchange="updatePrice()">
+                            </td>
+                        </tr>
+                    </table>
+                    <button id="b1"onclick="addToCart('VASANT GARAM MASALA', 360, 'garam.png')">add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <div id="footer">
+      <div class="f1">IMPORTANT LINK</div>
+      <span>
+        <a href="contact.php" id="ficon">contact us</a> |
+        <a href="cpolicy.html" id="ficon">cancelation and return policy</a> |
+        <a href="tpolicy.html" id="ficon">terms and condition</a> |
+        <a href="spolicy.html" id="ficon">shiping policy</a>
+      </span>
+      <div class="f1">ADDRESS</div>
+      <div>Ramdev Masala co., Market Yard, Anand-388001</div>
+      <div class="f1">
+        <a href="https://www.instagram.com/shree_vasudev_traders_17?igsh=OW1rbzd1MDN2YjM4&utm_source=qr" id="ficon"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/shree.vasudev.traders?mibextid=AEUHqQ" id="ficon"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="http://www.twitter.com" id="ficon"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div id="rights">
+      @2024 Ramdev Masala co. all rights reserved
+    </div>
+  </footer>
+</body>
+
+</html>

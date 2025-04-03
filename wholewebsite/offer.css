@@ -1,0 +1,70 @@
+ul{
+    list-style: inside;
+    
+}
+#content{
+    margin:50px 200px 0px 200px ;
+}
+li{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.main{
+    display: flex;
+    margin-left:14% ;
+    margin-right:20%;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.size{
+    height: 223px;
+    width: 223px;
+}
+#t1,#t2,#t3,#t4{
+    width: 223px;
+    height: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left:20px;
+    text-align: center;
+}
+#name{
+    margin-top: 10px;
+    font-size: 16px;
+}
+#price{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: "Lustria", serif;
+}
+#View{
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    background-color: red;
+}
+.next{
+    background-color: rgba(255, 0, 0, 0.7);
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+}
+.previous{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+}
+.next:hover{
+    background-color: aliceblue;
+}
+.previous:hover{
+    background-color:rgba(0, 0, 0, 0.2)
+}
+.np{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+
+}

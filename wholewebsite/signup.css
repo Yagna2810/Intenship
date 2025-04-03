@@ -1,0 +1,65 @@
+#s1 h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 50px 150px 50px 150px;
+    text-align: center;
+}
+#pi{
+    margin: 5px 150px 5px 150px;
+}
+h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+hr{
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+#name th{
+    font-size: 14px;
+    font-weight: 370;
+}
+table{
+    height: 80px;
+    width: 635px;
+    text-align: left;
+}
+td input{
+    height: 35px;
+    width: 190px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+p{
+    text-align: end;
+    font-size: 12px;
+    font-weight: 300;
+}
+#sub{
+    display: flex;
+    justify-content: space-between;
+}
+#back{
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+#back:hover{
+    background-color: rgba(255,0,0,0.7);
+}
+#submit{
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: rgba(255,0,0,0.7);
+}
